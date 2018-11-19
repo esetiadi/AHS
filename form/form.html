@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AHS Donation form</title>
+  </head>
+  <body>
+    <img src="starbuzz_logo.png" title="Starbuzz Coffee Logo">
+    <form action="my-form.php" method="POST">
+    	<p>
+    		Choose your beans:
+    		<select name="beans">
+    			<option value="House Blend">House Blend</option>
+    			<option value="Blivia">Bolivia</option>
+    			<option value="Guatemala">Guatemala</option>
+    			<option value="Kenya">Kenya</option>
+    		</select>
+    	</p>
+    	<p>
+    		Type: <br>
+    		<input type="radio" name="beantype" value="whole">Whole Bean<br>
+    		<input type="radio" name="beantype" value="ground">Ground
+    	</p>
+    	<p>
+    		Number of bags: <input type="number" name="bags" min="1" max="10">
+    	</p>
+    	<p>
+    		Must Arrive by date: <input type="date" name="date">
+    	</p>
+    	<p>
+    		Extras:<br>
+    		<input type="checkbox" name="extras[]" value="giftwrap">Gift wrap<br>
+    		<input type="checkbox" name="extras[]" value="catalog" checked>Include catalog with order
+    	</p>
+    	<p>Ship to: <br>
+    		Name: <input type="text" name="name"> <br>
+	    	Address: <input type="text" name="address"> <br>
+	    	City: <input type="text" name="city"> <br>
+	    	State: <input type="text" name="state"> <br>
+	    	Zip: <input type="text" name="zip"> <br>
+	    	Phone: <input type="tel" name="phone"
+	    </p>
+	    <p>
+	    	Customer Comments:<br>
+	    	<textarea name="comments"></textarea>
+	    </p>
+	    <p><input type="submit" value="Order Now"></p>
+
+  </body>
+</html>
