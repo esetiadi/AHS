@@ -98,7 +98,6 @@ textarea {
    ========================================================================== */
    html {
      box-sizing: border-box;
-     background-color: #ccffff;
    }
    *, *:before, *:after {
      box-sizing: inherit;
@@ -106,40 +105,58 @@ textarea {
 
 body {
      font-family: 'Josefin Slab', serif;
-     border: 1px solid fuchsia;
    }
+.social-media {
+  position: absolute;
+  top: 0;
+  z-index: 60;
+}
 
+.social-media {
+  background-color: #ccffff;
+  border: 1px solid #4c3321;
+  padding: 1em;
+}
+.social-media li {
+list-style-type: none;
+}
 .page-content {
   background-color: white;
-  max-width: 850px;
-margin-right: auto;
-margin-left: auto;
-z-index: -10;
-padding: 0 2em;
-border: 1px solid green;
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-content {
   margin-top: 15em;
 }
 .main-nav {
-  float: left;
-  border: 1px solid purple;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.main-nav li {
+  display: inline;
   padding: 1em;
+}
+.main-nav a {
+  display: inline-block;
+}
+.page-header {
   position: fixed;
+  background-color: white;
+  height: 25%;
+  width: 100%;
+  z-index: 50;
 }
 .page-header img {
-  position: fixed;
-  width: 850px;
-  height: 200px;
-  top: 15%;
-  left: 50%;
-  margin-top: -135px;
-  margin-left: -425px;
-  border: 1px solid orange;
-  background-color: white;
-  z-index: 40;
-}
+  height: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
+}
 i {
   font-size: 200%;
 }
@@ -159,13 +176,17 @@ h1, h2, h3 {
   font-family: 'Fredericka the Great', cursive;
   color:#4c3321;
 }
-h2, h3 {
+h2, {
   color:#0087bc;
   margin: 0;
 }
 
+.more-friends {
+  text-align: right;
+  margin-right: 1em;
+}
+
 h3, footer {
-  border: 1px solid blue;
   clear:both;
 }
 img {
@@ -185,6 +206,20 @@ img {
 }
 a {
   text-decoration: none;
+}
+
+.footer {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+.footer li {
+  display: inline;
+  padding: 1em;
+  font-size: 125%;
+}
+.footer a {
+  display: inline-block;
 }
 
 /* WHEN ABOUT IS OPEN */
