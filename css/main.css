@@ -114,11 +114,14 @@ body {
 
 .social-media {
   background-color: #ccffff;
-  border: 1px solid #4c3321;
+  border: 1px dotted #4c3321;
   padding: 1em;
 }
 .social-media li {
 list-style-type: none;
+}
+.social-media a:hover {
+  color: #4c3321;
 }
 .page-content {
   background-color: white;
@@ -139,7 +142,13 @@ list-style-type: none;
 .main-nav li {
   display: inline;
   padding: 1em;
+  font-weight: bold;
+  }
+.main-nav li:hover {
+  background-color: hsla(182, 72%, 50%, 0.2);
+  border: 1px dotted #4c3321;
 }
+
 .main-nav a {
   display: inline-block;
 }
@@ -182,10 +191,17 @@ h2, {
 }
 
 .more-friends {
-  text-align: right;
+  float: right;
+  text-align: center;
+  display: block;
   margin-right: 1em;
+  width: 30%;
+  padding: 1em;
 }
-
+.more-friends:hover{
+    background-color: hsla(182, 72%, 50%, 0.2);
+    border: 1px dotted #4c3321;
+}
 h3, footer {
   clear:both;
 }
@@ -198,11 +214,13 @@ img {
     float: left;
     padding: 1em;
 }
-.friend-thumb:hover {
+.friend-thumb:hover{
     background-color: hsla(182, 72%, 50%, 0.2);
+      border: 1px dotted #4c3321;
 }
 .friend-thumb img {
     position: relative;
+    border: 1px dotted #4c3321;
 }
 a {
   text-decoration: none;
