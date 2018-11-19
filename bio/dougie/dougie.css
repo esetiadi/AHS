@@ -123,24 +123,61 @@ body {
 }
 .page-content {
   background-color: white;
-  max-width: 500px;
+  max-width: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15em;
-  text-align: center;
+  position: relative;
 }
 .friend-thumb {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(182, 72%, 50%, 0.2);
-  border: 1px dotted #4c3321;
-  float: left;
+    position: relative;
+    width: 60%;
+    float: left;
+    padding: 1em;
+    background-color: #ccffff;
+    border: 1px dotted #4c3321;
 }
 .friend-thumb img {
-  padding: 2em;
+    position: relative;
+    width: 100%;
+}
 
+.bio {
+  float: right;
+  width: 40%;
+  padding: 0 1em;
+  font-weight: bold;
+}
+.bio-text {
+  clear: both;
+  padding: 1em;
+}
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  color:#4c3321;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+}
+.button {
+width:5em;
+height:2em;
+border-radius: 0.2em;
+font-family: 'Josefin Slab', serif;
+font-size:1.5em;
+font-weight: bold;
+padding:1em;
+margin-left: 30%;
+  border: 1px dotted #4c3321;
+}
+a{
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  background-color: #ccffff;
 }
 
 
