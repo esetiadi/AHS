@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>AHS Donation form</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
     <link rel="stylesheet" href="form.css">
   </head>
   <body>
@@ -10,45 +11,49 @@
       <img src="../image/logo.svg">
     </header>
 
+<div class="page-content">
     <form action="my-form.php" method="POST">
-    	<p>
-    		Choose your beans:
-    		<select name="beans">
-    			<option value="House Blend">House Blend</option>
-    			<option value="Blivia">Bolivia</option>
-    			<option value="Guatemala">Guatemala</option>
-    			<option value="Kenya">Kenya</option>
+
+<h1>Give the gift of a second chance today.</h1>
+<p>Give a gift that changes lives. Your support helps provide safe shelter from the cold, expert medical care, and much needed love to homess animals in our community.</p>
+<p>Together, we can give animals in need the ultimate gift: the opportunity to find a loving home.</p>
+
+    	<h2>Type:</h2>
+      <ul>
+        <li><input type="radio" name="donation" value="one-time">Make a one-time donation</li>
+    		<li><input type="radio" name="donation" value="monthly">Make a monthly sustaining donation</li>
+        <li><input type="radio" name="sponsor" value="sponsor">Sponsor (Please give us name of your chosen recipient(s) on comments section below)</li>
+    	</ul>
+
+      <h2>Select gift amount:</h2>
+    		<select class="button" name="gifts">
+    			<option value="&dollar;50">&dollar;50</option>
+    			<option value="&dollar;100">&dollar;100</option>
+    			<option value="&dollar;250">&dollar;250</option>
+    			<option value="&dollar;500">&dollar;500</option>
+          <option value="Enter amount">Enter amount</option>
     		</select>
-    	</p>
-    	<p>
-    		Type: <br>
-    		<input type="radio" name="beantype" value="whole">Whole Bean<br>
-    		<input type="radio" name="beantype" value="ground">Ground
-    	</p>
-    	<p>
-    		Number of bags: <input type="number" name="bags" min="1" max="10">
-    	</p>
-    	<p>
-    		Must Arrive by date: <input type="date" name="date">
-    	</p>
-    	<p>
-    		Extras:<br>
-    		<input type="checkbox" name="extras[]" value="giftwrap">Gift wrap<br>
-    		<input type="checkbox" name="extras[]" value="catalog" checked>Include catalog with order
-    	</p>
-    	<p>Ship to: <br>
-    		Name: <input type="text" name="name"> <br>
-	    	Address: <input type="text" name="address"> <br>
-	    	City: <input type="text" name="city"> <br>
-	    	State: <input type="text" name="state"> <br>
-	    	Zip: <input type="text" name="zip"> <br>
-	    	Phone: <input type="tel" name="phone"
-	    </p>
-	    <p>
-	    	Customer Comments:<br>
-	    	<textarea name="comments"></textarea>
-	    </p>
-	    <p><input type="submit" value="Order Now"></p>
+
+
+
+    	<h2>Your Information:</h2>
+        <ul>
+    		<li>Name: <input type="text" name="name"></li>
+	    	<li>Address: <input type="text" name="address"></li>
+	    	<li>City: <input type="text" name="city"></li>
+	    	<li>State: <input type="text" name="state"></li>
+	    	<li>Zip: <input type="text" name="zip"></li>
+	    	<li>Phone: <input type="tel" name="phone"></li>
+        <li>Email: <input type="email" name="email"></li>
+      </ul>
+
+
+	    	<h2>Comments or inquiries:</h2>
+	    	<textarea class="comment" name="comments"></textarea>
+
+	    <p><input class="button" type="submit" value="SUBMIT"></p>
+
+    </div><!--page-content-->
 
   </body>
 </html>
